@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MagicNumbers : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class MagicNumbers : MonoBehaviour
     public int min = 1;
     public int max = 1000;
     int guess;
+
+    public Text title;
     
     void Start()
     {
         //min = 1;
         //max = 1000;
-
+        title.text = "Magic Numbers";
         print("Загадайте число от  " + min + "до" + max);
         UpdateGuess();
     }
